@@ -1,29 +1,20 @@
 class Solution {
 public:
-    int majorityElement(vector<int>& nums) {
-        int n = nums.size(); 
-        int cnt = 0; int element;
-        for(int i = 0; i < n; i++) {
-            if(cnt == 0) {
-                cnt = 1;
-                element = nums[i];
+    int majorityElement(vector<int>& arr) {
+        int n = arr.size();
+        int majority = arr[0]; int vote = 1;
+        for(int i = 1; i < n; i++) {
+            if(vote == 0) {
+                vote = 1;
+                majority = arr[i];
             }
-            else if(element == nums[i]) {
-                cnt++;
+            else if(arr[i] == majority) {
+                vote++;
             }
-            else {
-                cnt--;
-            }
-        }
-        int appears = 0;
-        for(int i = 0; i < n; i++) {
-            if(nums[i] == element) {
-                appears++;
+            else{
+                vote--;
             }
         }
-        if(appears > n/2) {
-            return element;
-        }
-        return -1;
+        return majority;
     }
 };
