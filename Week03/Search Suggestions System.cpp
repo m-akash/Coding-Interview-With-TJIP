@@ -1,3 +1,16 @@
+/*
+Complexity Analysis
+Time Complexity: 
+Trie Construction: O(M×N), where M is the average product length, and N is the number of products.
+Suggestion Retrieval: O(L×(P+3×26)), where L is the length of searchWord, P is the length of the prefix, and 3 is for finding up to 3 words per prefix.
+Overall: O(M×N+L×P)
+
+Space Complexity:
+Trie Space: O(M×N), where M is the average word length and N is the number of products.
+DFS Auxiliary Space: O(M), for the recursion stack, where M is the longest word length.
+Product Suggestions Output: O(L×M), where L is the length of searchWord.
+Overall: O(M×N) 
+*/
 class Solution {
 public:
     class TrieNode {
