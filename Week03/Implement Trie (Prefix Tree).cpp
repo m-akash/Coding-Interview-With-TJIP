@@ -1,3 +1,11 @@
+/*
+Complexity Analysis
+Time Complexity:
+Insert/Search/StartsWith: O(M) per operation.
+Overral: O(M * N).
+
+Space Complexity: O(M * N).
+*/
 class Trie {
 public:
     class TrieNode {
