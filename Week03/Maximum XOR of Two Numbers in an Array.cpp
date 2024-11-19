@@ -1,3 +1,12 @@
+/*
+Complexity Analysis
+Time Complexity:
+Trie Insertion: O(N * B), where N is the size of nums, and B = 31 is the bit length.
+Best Match Queries: O(N * B)
+Overall: O(N * B)
+
+Space Complexity: O(N * B)
+*/
 class Solution {
 public:
     class TrieNode {
