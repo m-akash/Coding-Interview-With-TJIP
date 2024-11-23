@@ -1,8 +1,9 @@
-
-
-
-
-
+/*
+Complexity Analysis
+Time Complexity: O(M * N * 4 * 3^t-1 + S)
+Here, M is the number of rows and N is the number of columns, t is the maximum length of any 'word' in the array words and S is the sum of the lengths of all the words.
+Space Complexity: O(S).
+*/
 class Solution {
     unordered_set<string> res;
     vector<vector<bool>> visit;
@@ -11,7 +12,9 @@ public:
     public:
         bool isEnd;
         unordered_map<char, TrieNode*> next;
-        TrieNode() { isEnd = false; }
+        TrieNode() {
+            isEnd = false;
+        }
         void insert_word(string& words) {
             TrieNode* current = this;
             for (auto ch : words) {
