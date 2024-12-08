@@ -1,8 +1,8 @@
 /*
 Complexity Analysis
 
-Time Complexity: O(N)
-Space Complexity: O(N)
+Time Complexity: O(N), Where N means total node of the tree.
+Space Complexity: O(N), Where N means total node of the tree.
 */
 class Solution {
 public:
