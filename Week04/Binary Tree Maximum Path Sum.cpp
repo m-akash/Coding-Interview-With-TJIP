@@ -1,7 +1,7 @@
 /*
 Complexity Analysis
 
-Time Conplexity: O(N), Where N means each Node of the tree.
+Time Conplexity: O(N), Where N means total Node of the tree.
 Space Complexity: O(h), Where h means the height of thr tree.
 */
 class Solution {
