@@ -1,3 +1,9 @@
+/*
+Complexity analysis
+
+Time Complexity: O(K)
+Space Complexity: O(K)
+*/
 class Solution {
 public:
     int minX = INT_MAX, minY = INT_MAX;
